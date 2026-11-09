@@ -1,0 +1,54 @@
+job_id,job_title,job_description
+J001,Python Backend Developer,"
+        Required: Python, REST APIs, SQL, Git, and automated testing.
+        Preferred: FastAPI, PostgreSQL, Docker, and application deployment.
+        Responsibilities include building and maintaining backend services.
+        "
+J002,Data Analyst,"
+        Required: SQL, Python, data cleaning, and exploratory data analysis.
+        Preferred: pandas, Excel, Power BI, dashboard creation, and reporting.
+        Responsibilities include analyzing data and communicating insights.
+        "
+J003,Machine Learning Engineer,"
+        Required: Python, scikit-learn, feature engineering,
+        model evaluation, and machine learning fundamentals.
+        Preferred: pandas, NumPy, cross-validation, classification,
+        and regression.
+        "
+J004,NLP Engineer,"
+        Required: Python, NLP, tokenization, Transformers,
+        and text classification.
+        Preferred: Hugging Face, PyTorch, sentence embeddings,
+        and semantic search.
+        "
+J005,Computer Vision Engineer,"
+        Required: Python, CNNs, image classification, and PyTorch.
+        Preferred: OpenCV, image augmentation, transfer learning,
+        and model evaluation.
+        "
+J006,Frontend Developer,"
+        Required: HTML, CSS, JavaScript, and responsive web design.
+        Preferred: React, accessibility, Git, and reusable UI components.
+        Responsibilities include building accessible web interfaces.
+        "
+J007,Cloud and DevOps Engineer,"
+        Required: Linux, Docker, CI/CD, and deployment automation.
+        Preferred: AWS, Git, monitoring, and container orchestration.
+        Responsibilities include improving deployment reliability.
+        "
+J008,Business Data Analyst,"
+        Required: SQL, Excel, reporting, and data analysis.
+        Preferred: Power BI, stakeholder communication,
+        requirements gathering, and dashboard development.
+        "
+J009,Junior Software Engineer,"
+        Required: programming fundamentals, data structures,
+        debugging, Git, and software testing.
+        Preferred: Python, Java, SQL, and object-oriented programming.
+        "
+J010,Applied AI Engineer,"
+        Required: Python, machine learning, model evaluation,
+        and experience implementing AI applications.
+        Preferred: PyTorch, Transformers, NLP, sentence embeddings,
+        and semantic search.
+        "

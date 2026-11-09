@@ -1,0 +1,72 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model and experiment artifacts
+.cache/
+huggingface/
+wandb/
+mlruns/
+lightning_logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local logs and backup archives
+*.zip
+*_backup/
+talentmatch_before_restore/
+# Local environment and notebook checkpoints
+
+# Generated Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime logs
+*.log
+
+# Local audit artifacts
+NOTEBOOK_AUDIT.txt
+PROJECT_AUDIT.json
+
+# Intermediate evaluation artifacts (kept locally, not published)
+data/evaluation/model_comparison_metrics.csv
+data/evaluation/model_comparison_metrics_40_pairs.csv
+data/evaluation/model_comparison_metrics_corrected.csv
+data/evaluation/model_comparison_metrics_final.csv
+data/evaluation/model_comparison_pair_scores.csv
+data/evaluation/model_comparison_scores_40_pairs.csv
+data/evaluation/remaining_pairs_for_review.csv
+data/evaluation/review_batch_20.csv
+data/evaluation/tfidf_metrics_by_resume.csv
+data/evaluation/tfidf_pair_scores.csv

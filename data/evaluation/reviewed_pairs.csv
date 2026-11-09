@@ -1,0 +1,41 @@
+resume_id,job_id,relevance_label,label_reason
+R001,J001,2,"Python, REST APIs, SQL, Git, and testing align with requirements."
+R002,J002,2,"SQL, Python, data cleaning, analysis, and reporting align."
+R003,J003,2,"Python, scikit-learn, feature engineering, and model evaluation align."
+R004,J004,2,"Transformers, tokenization, text classification, and preferred NLP tools align. Python is not explicitly stated in the resume."
+R007,J005,2,"Python, CNNs, PyTorch, and image classification align."
+R006,J006,2,"HTML, CSS, JavaScript, React, and responsive design align."
+R008,J007,2,"Linux, Docker, CI/CD, and deployment automation align."
+R009,J008,2,"SQL, Excel, reporting, analysis, and stakeholder communication align."
+R010,J009,2,"Programming fundamentals, data structures, debugging, and testing align."
+R005,J001,2,"Python, REST APIs, SQL, Git, testing, FastAPI, PostgreSQL, and Docker align."
+R003,J010,1,"Python and machine learning fundamentals align, but explicit AI application implementation evidence and several preferred skills are missing."
+R004,J010,1,"Strong NLP and Transformer overlap, but Python, general machine learning, and AI application implementation are not explicitly evidenced."
+R002,J008,2,"SQL, Excel, reporting, and data analysis align; preferred skills include some matches."
+R001,J009,1,"Python, Git, and testing align, but data structures and Java evidence are limited."
+R010,J001,1,"Python, SQL, and Git align, but backend API and deployment evidence is limited."
+R003,J002,1,"Python and data analysis tools overlap, but reporting and dashboard evidence is limited."
+R005,J007,1,"Docker and deployment-related experience overlap, but Linux and CI/CD evidence is limited."
+R006,J004,0,Frontend skills provide little direct evidence for the NLP requirements.
+R009,J005,0,Business analysis skills provide little direct evidence for computer vision requirements.
+R002,J007,0,Data analysis skills provide little direct evidence for cloud and DevOps requirements.
+R001,J002,1,"Python and SQL align, but analytics-specific evidence is limited."
+R001,J003,1,"Python aligns, but machine learning experience is not demonstrated."
+R002,J001,1,"Python and SQL align, but backend API and testing evidence is missing."
+R002,J003,1,"Python, pandas and NumPy align, but key ML requirements are not demonstrated."
+R003,J001,1,"Python aligns, but backend development requirements are mostly missing."
+R003,J004,1,"Python aligns, but NLP and Transformer experience is not demonstrated."
+R004,J001,0,No explicit Python or backend development evidence.
+R004,J002,0,"No explicit SQL, Python or analytics evidence."
+R005,J002,1,"Python and SQL align, but data analysis evidence is limited."
+R005,J003,1,"Python aligns, but machine learning experience is not demonstrated."
+R006,J001,0,Only limited overlap through Git; backend requirements are missing.
+R006,J002,0,Little demonstrated analytics alignment.
+R007,J001,1,"Python aligns, but backend development evidence is missing."
+R007,J002,1,"Python and model evaluation overlap, but analytics-specific skills are limited."
+R008,J001,1,"Git, Docker and deployment overlap, but Python and backend evidence is missing."
+R008,J002,0,Little demonstrated analytics alignment.
+R009,J001,1,"SQL and documentation overlap, but Python and backend evidence is missing."
+R009,J002,1,"SQL, Excel, reporting and dashboards align, but Python is missing."
+R010,J002,1,"Python and SQL align, but analytics experience is not demonstrated."
+R010,J003,1,"Python fundamentals align, but machine learning experience is missing."

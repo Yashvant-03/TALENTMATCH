@@ -1,0 +1,52 @@
+resume_id,profile,resume_text
+R001,Python Developer,"
+        Python developer with experience in Python, Flask, REST APIs,
+        SQL, Git, and unit testing. Built web applications and automated
+        data-processing workflows. Familiar with PostgreSQL and Docker.
+        "
+R002,Data Analyst,"
+        Data analyst skilled in SQL, Python, pandas, NumPy, Excel,
+        and Power BI. Experienced in exploratory data analysis,
+        dashboard creation, data cleaning, and reporting.
+        "
+R003,Machine Learning Engineer,"
+        Machine learning practitioner with Python, scikit-learn,
+        pandas, NumPy, model evaluation, feature engineering,
+        classification, regression, and cross-validation experience.
+        "
+R004,NLP Engineer,"
+        NLP practitioner experienced with Transformers, tokenization,
+        text classification, sentence embeddings, semantic search,
+        Hugging Face, and PyTorch. Built text-processing pipelines.
+        "
+R005,Backend Developer,"
+        Backend developer experienced in Python, FastAPI, REST APIs,
+        PostgreSQL, SQL, Git, Docker, and automated testing.
+        Built API endpoints and database-backed services.
+        "
+R006,Frontend Developer,"
+        Frontend developer skilled in HTML, CSS, JavaScript,
+        React, responsive design, accessibility, and Git.
+        Built interactive web interfaces and reusable UI components.
+        "
+R007,Computer Vision Engineer,"
+        Computer vision practitioner using Python, PyTorch,
+        CNNs, image augmentation, transfer learning, and OpenCV.
+        Built image classification experiments and evaluated
+        models using precision, recall, and confusion matrices.
+        "
+R008,Cloud Developer,"
+        Cloud-oriented developer familiar with Linux, Git,
+        Docker, CI/CD, AWS, monitoring, and deployment automation.
+        Built and maintained containerized application workflows.
+        "
+R009,Business Analyst,"
+        Business analyst skilled in requirements gathering,
+        stakeholder communication, Excel, SQL, documentation,
+        process analysis, and reporting. Created business dashboards.
+        "
+R010,Junior Software Developer,"
+        Junior developer with foundational knowledge of Python,
+        Java, SQL, Git, object-oriented programming, data structures,
+        debugging, and software testing. Built small academic projects.
+        "

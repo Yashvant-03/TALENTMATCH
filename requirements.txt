@@ -1,0 +1,18 @@
+# TALENTMATCH dependencies
+# Core data processing
+numpy
+pandas
+
+# Machine learning and evaluation
+scikit-learn
+scipy
+
+# Transformer embeddings and model development
+sentence-transformers
+torch
+
+# Interactive demonstration
+streamlit
+
+# Testing
+pytest

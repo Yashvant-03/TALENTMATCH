@@ -1,0 +1,3 @@
+model,precision_at_3_any,precision_at_3_strong,mrr_any,mrr_strong,ndcg_at_3,spearman
+Hybrid,0.867,0.367,1.0,1.0,1.0,0.852
+Sentence Transformer,0.867,0.367,1.0,1.0,1.0,0.852
