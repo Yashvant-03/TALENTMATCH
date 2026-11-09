@@ -115,7 +115,7 @@ TALENTMATCH.ipynb is the preserved original notebook. TALENTMATCH_CLEAN.ipynb re
 Python 3.10 or later is recommended.
 
 Clone the repository:
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/Yashvant-03/TALENTMATCH
 cd TALENTMATCH
 
 
