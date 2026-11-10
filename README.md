@@ -2,17 +2,20 @@
 
 **Transformer-based resume and job-description matching with evidence-backed skill analysis.**
 
-TALENTMATCH is an AI/ML portfolio project that compares resume text with job descriptions, estimates semantic relevance, extracts explicit skill evidence, and displays ranked matches through a Streamlit interface.
+TALENTMATCH compares resume text with job descriptions, estimates semantic relevance, extracts explicit skill evidence, and displays ranked matches through a Streamlit interface.
 
-> **Important:** This is a research and portfolio demonstration, not a hiring decision system. Scores are estimated relevance signals, not probabilities of suitability. Missing evidence does not prove a candidate lacks a skill.
+**Live demo:** https://talentmatch-ml.streamlit.app/  
+**GitHub:** https://github.com/Yashvant-03/TALENTMATCH
+
+> **Responsible use:** This is a research and portfolio demonstration, not a hiring decision system. Scores are estimated relevance signals, not probabilities of suitability. Missing evidence does not prove a candidate lacks a skill.
 
 ## 1. Problem and intended use
 
 Manually comparing resumes with job descriptions can be time-consuming. TALENTMATCH demonstrates how semantic text similarity and explicit skill evidence can support an initial comparison.
 
-**Intended use:** exploratory resume/job-description comparison.
+**Intended use:** Exploratory resume/job-description comparison.
 
-**Not intended for:** automated hiring decisions, candidate rejection, or claims about an individual's ability or suitability.
+**Not intended for:** Automated hiring decisions, candidate rejection, or claims about an individual's ability or suitability.
 
 ## 2. Features
 
@@ -97,7 +100,8 @@ Detailed results:
 ```text
 TALENTMATCH/
 ├── app/
-│   └── streamlit_app.py
+│   ├── streamlit_app.py
+│   └── requirements.txt
 ├── data/
 │   ├── synthetic/
 │   └── evaluation/
@@ -110,44 +114,64 @@ TALENTMATCH/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-TALENTMATCH.ipynb is the preserved original notebook. TALENTMATCH_CLEAN.ipynb removes an exact duplicate cell and clears historical error outputs. A fresh end-to-end rerun of either notebook has not yet been verified.
-8. Setup
+```
+
+`TALENTMATCH.ipynb` is the preserved original notebook. `TALENTMATCH_CLEAN.ipynb` removes an exact duplicate cell and clears historical error outputs. A fresh end-to-end rerun of either notebook has not yet been verified.
+
+## 8. Setup
+
 Python 3.10 or later is recommended.
 
 Clone the repository:
-git clone https://github.com/Yashvant-03/TALENTMATCH
-cd TALENTMATCH
 
+```bash
+git clone https://github.com/Yashvant-03/TALENTMATCH.git
+cd TALENTMATCH
+```
 
 Create and activate a virtual environment.
 
-Windows PowerShell:
+**Windows PowerShell:**
+
+```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-
+```
 
 Install dependencies:
+
+```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 
 Run the tests:
-python -m pytest -q tests
 
+```bash
+python -m pytest -q tests
+```
 
 Launch the Streamlit app:
+
+```bash
 streamlit run app/streamlit_app.py
+```
 
+The app reads saved CSV artifacts in `data/`. It does not regenerate embeddings when launched. The Sentence Transformer model is needed to reproduce the embedding pipeline in the notebook.
 
-The app reads the saved CSV artifacts in data/. It does not regenerate embeddings when launched. The Sentence Transformer model is needed for reproducing the embedding pipeline in the notebook.
-9. Reproducibility status
+For Streamlit Community Cloud, the lightweight dependencies are specified separately in `app/requirements.txt`.
+
+## 9. Reproducibility status
+
 - Saved datasets and evaluation artifacts are included.
 - Notebook source and execution history are included.
 - Streamlit app and artifact tests are included.
-- The current test suite has passed in the development environment.
+- The current test suite passed in the development environment.
 - A fresh end-to-end notebook rerun has not yet been verified.
 - Model weights are not committed; the Sentence Transformer model may need to be downloaded when reproducing the pipeline.
-10. Limitations and responsible use
+
+## 10. Limitations and responsible use
+
 1. Only 40 of 100 possible pairs have reviewed relevance labels.
 2. Unreviewed pairs are unknown, not negative examples.
 3. Synthetic resumes and job descriptions do not establish real-world effectiveness.
@@ -156,15 +180,21 @@ The app reads the saved CSV artifacts in data/. It does not regenerate embedding
 6. Similarity and skill coverage are decision-support signals, not hiring verdicts.
 7. Missing evidence is not proof that a person lacks a skill.
 8. Results should not be generalized to real candidate populations.
-11. Future improvements
+
+## 11. Future improvements
+
 - Expand independently reviewed evaluation data.
 - Improve skill extraction with contextual methods.
 - Compare ranking approaches using a consistent held-out evaluation set.
 - Evaluate score calibration and ranking robustness.
 - Add stronger data validation and reproducibility checks.
-12. Tests
+
+## 12. Tests
+
 Run:
+
+```bash
 python -m pytest -q tests
+```
 
-
-The current test suite checks required files, dataset dimensions, relevance labels, and ranking artifact validity.
+The test suite checks required files, dataset dimensions, relevance labels, and ranking artifact validity.
