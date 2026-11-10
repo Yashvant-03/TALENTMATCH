@@ -2,8 +2,9 @@ from pathlib import Path
 import json
 import pandas as pd
 
-ROOT = Path("/content/talentmatch")
+ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+
 
 def test_required_project_files_exist():
     required = [
@@ -14,7 +15,9 @@ def test_required_project_files_exist():
         DATA / "evaluation/hybrid_ranking_results.csv",
         DATA / "evaluation/semantic_ranking_results.csv",
     ]
-    assert all(path.exists() for path in required)
+    missing = [str(path) for path in required if not path.exists()]
+    assert not missing, f"Missing project files: {missing}"
+
 
 def test_synthetic_dataset_dimensions():
     resumes = pd.read_csv(DATA / "synthetic/resumes.csv")
@@ -24,11 +27,14 @@ def test_synthetic_dataset_dimensions():
     assert resumes["resume_id"].is_unique
     assert jobs["job_id"].is_unique
 
+
 def test_reviewed_labels_are_valid():
     reviewed = pd.read_csv(DATA / "evaluation/reviewed_pairs.csv")
     assert len(reviewed) == 40
-    assert reviewed[["resume_id", "job_id"]].duplicated().sum() == 0
-    assert set(reviewed["relevance_label"].dropna().unique()).issubset({0, 1, 2})
+    assert not reviewed[["resume_id", "job_id"]].duplicated().any()
+    assert reviewed["relevance_label"].notna().all()
+    assert set(reviewed["relevance_label"].unique()).issubset({0, 1, 2})
+
 
 def test_ranking_artifacts_have_valid_scores():
     for filename, score_column in [
@@ -42,12 +48,14 @@ def test_ranking_artifacts_have_valid_scores():
         assert df[score_column].between(0, 1).all()
         assert not df[["resume_id", "job_id"]].duplicated().any()
 
+
 def test_skill_evidence_is_valid_json():
     df = pd.read_csv(DATA / "evaluation/skill_matching_results.csv")
     assert "skill_evidence" in df.columns
     for value in df["skill_evidence"].dropna():
         parsed = json.loads(value)
         assert isinstance(parsed, dict)
+
 
 def test_coverage_is_between_zero_and_one():
     df = pd.read_csv(DATA / "evaluation/skill_matching_results.csv")
